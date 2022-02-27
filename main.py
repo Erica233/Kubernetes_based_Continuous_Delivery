@@ -14,15 +14,13 @@ def add(num1: int, num2: int):
     total = num1 + num2
     return {"total": total}
     
-@app.get("/sum_list")
-def sum_list(list1: list):
-    """Sum up the numbers in the input list"""
+@app.get("/cal_profit/{cost}/{revenue}")
+def cal_profit(cost: float, revenue: float):
+    """Given the cost and revenue, calculate the profit margin"""
 
-    total = 0
-    for num in list1:
-        total += num
+    profit_margin = (revenue - cost)/revenue
     
-    return {"total": total}
+    return {"profit_margin": profit_margin}
 
 if __name__ == '__main__':
     uvicorn.run(app, port=8080, host='0.0.0.0')

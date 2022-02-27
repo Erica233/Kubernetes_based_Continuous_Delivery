@@ -1,7 +1,7 @@
-from main import add, sum_list
+from main import add, cal_profit
 
 def test_add():
     assert add(3, 1) == {"total":4}
     
-def test_sum_list():
-    assert sum_list([1, 2, 2]) == {"total":5}
+def test_cal_profit():
+    assert cal_profit(100, 120) == {"profit_margin":0.2}
