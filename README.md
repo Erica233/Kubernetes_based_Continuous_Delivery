@@ -10,7 +10,7 @@ For example, you can append "/cal_profit/100/200" to get "{"profit_margin":0.5}"
 
 
 ## How did I implement it
-I wrote it on Cloud9 environment, and git push to my github repo and set up actions to deploy continuous integration of it.
-I created a docker container for it, and pushed the docker image to ECR.
-I created App Runner Service for automatically deploying the most updated version.
-It is a Kubernetes based service containing Continuous Delivery.
+1. I wrote it on Cloud9 environment, and git push to my github repo and set up actions to deploy continuous integration of it. 
+2. I created a docker container for it, and pushed the docker image to ECR.
+3. I created App Runner Service for automatically deploying the most updated version.
+4. It is a Kubernetes based service containing Continuous Delivery.
